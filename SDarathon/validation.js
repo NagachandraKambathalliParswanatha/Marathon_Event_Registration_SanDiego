@@ -1,8 +1,5 @@
 
 //kambathalli parswanatha, Nagachandra
-//Jadran Id: Jadrn023
-//Red ID: 821728226
-//Project #2
 //Fall 2017
 
 function isEmpty(fieldValue) {
