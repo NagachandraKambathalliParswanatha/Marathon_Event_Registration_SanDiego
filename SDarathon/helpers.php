@@ -1,0 +1,66 @@
+<!--
+    KambathalliParswanatha, Nagachandra
+    jadrn023
+    Project #3
+    Fall 2017;
+-->
+<?php
+
+$bad_chars = array('$','%','?','<','>','php');
+
+function check_post_only() {
+    if(!$_POST) {
+        write_error_page("This scripts can only be called from a form.");
+        exit;
+    }
+}
+
+function write_error_page($msg) {
+    write_header();
+    echo "<h2>Sorry, an error occurred<br />",
+    $msg,"</h2>";
+    write_footer();
+}
+
+function write_header() {
+    print <<<ENDBLOCK
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+    <head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="MyStyle.css" type="text/css"/>
+		<title>Sign Up!!</title>
+	</head>    
+ENDBLOCK;
+}
+
+function write_footer() {
+    echo "</body></html>";
+}
+
+function get_db_handle() {
+    ########################################################
+    # DO NOT USE jadrn000, DO NOT MODIFY jadnr000 DATABASE!
+    ########################################################
+    $server = 'opatija.sdsu.edu:3306';
+    $user = 'jadrn023';
+    $password = 'briefcase';
+    $database = 'jadrn023';
+    ########################################################
+
+    if(!($db = mysqli_connect($server, $user, $password, $database))) {
+        write_error_page('SQL ERROR: Connection failed: '.mysqli_error($db));
+    }
+    return $db;
+}
+
+function close_connector($db) {
+    mysqli_close($db);
+}
+
+?>

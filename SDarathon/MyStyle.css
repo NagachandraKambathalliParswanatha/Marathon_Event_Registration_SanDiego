@@ -1,0 +1,390 @@
+/*
+KambathalliParswanatha, Nagachandra
+jadrn023
+Project #3
+Fall 2017;
+*/
+*{margin: 0; padding: 0; }
+body
+{
+    background-color: #fff;
+    color: #777;
+    font: normal 15px;
+	font-family:"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.SignUpClass
+{
+	color: #444;
+    font-weight: bold;
+    margin-top: 80px;
+
+	float:right;
+	font-size:20px;
+	margin-right:150px;
+
+}
+p
+{
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+h1
+{
+    font-family: 'Crete Round', serif;
+    font-weight: bold;
+    color: #444;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+h2
+{
+    font-weight: 300;
+    color: #444;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+	color: white;
+	font: bold 24px/45px Helvetica, Sans-Serif;
+	letter-spacing: -1px;
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px;
+}
+h3
+{
+    font-size: 25px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+	color:#102451;
+	font-family:Thirsty Script,serif;
+	font-weight:300
+}
+h4
+{
+    font-size: 24px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+h5
+{
+    font-size: 15px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a
+{
+    text-decoration: none;
+    color: #444;
+
+}
+a:hover
+{
+    color: #02b8dd;
+}
+strong
+{
+    font-weight: bold;
+}
+small
+{
+    font-size: 13px;
+    color: #777;
+    font-style: italic;
+}
+.Heading
+{
+	float: left;
+    margin-top: 50px;
+	margin-left: 150px;
+}
+
+.wrapperHeader
+{
+	height: 120px;
+
+}
+
+
+
+
+#hero-image h2
+{
+    margin: 180px 0 40px 0;
+}
+
+
+#features ul
+{
+    margin: 80px 0;
+}
+#features ul li
+{
+    width: 300px;
+    padding-top: 140px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#primary-content {
+    background-color: #f8fafa;
+    padding: 60px 0;
+    text-align: center;
+}
+#primary-content h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+}
+#primary-content p
+{
+	margin: 0 auto;
+    padding: 0 10px;
+    width: 940px;
+}
+.overlay
+{
+	float:left;
+	background: rgba(255, 255, 255, .95);
+    width: 190px;
+	margin-left: 180px;
+	padding: 30px;
+	margin-top:90px;
+	margin-bottom:90px;
+}
+
+.imgoverlay
+{
+	float:right;
+	margin-top:90px;
+	margin-right: 180px;
+	margin-bottom:90px;
+}
+
+.more-link {
+    border: 1px solid #02b8dd;
+    color: #02b8dd;
+    padding: 6px 20px;
+    border-radius: 3px;
+}
+.more-link:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
+#cta {
+	margin-top: 30px;
+    padding: 60px 0;
+    text-align: center;
+	}
+#cta h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+}
+
+#footer-info
+{
+    width: 380px;
+    float: left;
+    margin-top: 50px;
+	margin-left: 120px;
+	padding: 30px;
+	margin-bottom:90px;
+
+}
+
+#footer-links
+{
+	margin-top: 60px;
+    width: 520px;
+    float: right;
+	margin-right: 180px;
+	margin-bottom:90px;
+
+}
+#footer-links ul {
+    width: 150px;
+    float: left;
+    margin-left: 20px;
+}
+#footer-links ul li {
+    margin: 10px 0;
+}
+
+#Backgroundcolor-setter
+{
+	overflow: hidden;
+	background-color: #f8fafa;;
+}
+.color{
+	font-family: 'Crete Round', serif;
+    font-weight: bold;
+    font-size: 35px;
+	color: #02b8dd
+}
+
+
+h1 {
+    text-align: center;
+    }
+
+
+
+
+ul {
+    list-style-type: none;
+    }
+
+li {
+
+    margin-bottom: 5px;
+    }
+
+
+
+input {
+    font-family: courier;
+    border: 1px solid #DDD;
+    }
+
+.button {
+    font-family: sans-serif;
+    }
+
+.error {
+    border:  1px solid red;
+    background-color: #FEE;
+    }
+
+#button_panel {
+    text-align: center;
+    border-top: 1px solid #999;
+    padding-top: 5px;
+    }
+
+
+#message_line
+{
+
+	position:fixed;
+	right:20px;
+	top:90px;
+
+	border-radius:10px;
+	color: red;
+    font-family: sans-serif;
+    font-style: italic;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+
+fieldset
+{
+
+	margin-left: 100px;
+
+    padding-top: 12px;
+    width: 650px;
+    border: 1px solid black;
+    background-color: #98fb98;
+
+    border-radius: 15px;
+    /*z-index: 10;*/
+    margin-bottom: 30px;
+}
+
+
+input
+ {
+
+    padding: 8px 5px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+ }
+
+
+
+legend {
+    background-color:#A0A0A0;
+    padding: 10px 15px;
+    border: 1px dotted gray;
+    font-family: helvetica;
+    border-radius: 10px;
+    margin-left:10%;
+    width: 20%;
+
+    margin-bottom: 15px;
+    /*margin-top: 50px;*/
+    color: white;
+    }
+
+label
+{
+	margin:0px;
+	padding:10px;
+	color:black;
+	font-size:20px;
+
+}
+
+
+.telephone
+{
+	size:25px;
+}
+
+
+
+#Submitbuttons {
+    text-align: center;
+    border-image: 1px solid black;
+    padding-top: 10px;
+
+
+}
+
+
+.button
+{
+
+    padding: 10px 38px 10px 35px;
+    color: #FFF;
+	margin: 30px auto;
+    background: #1abc9c;
+    font-size: 25px;
+    text-align: center;
+    font-style: normal;
+    border: 1px solid #16a085;
+}
+
+.button:hover
+{
+    background: #109177;
+}
+#medical-conditions
+{
+	margin-left:30px;
+	padding:10px;
+
+}
+.big
+{
+   width: 1.3em;
+   height: 1.3em;
+}

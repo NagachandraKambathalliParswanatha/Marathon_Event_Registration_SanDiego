@@ -1,0 +1,130 @@
+<!--
+kambathalli parswanatha, Nagachandra
+Jadran Id: Jadrn023
+Red ID: 821728226
+Project #2
+Fall 2017
+-->
+<!doctype html>
+<html>
+
+<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+		<script src="validation.js"></script>
+		<link rel="stylesheet" href="MyStyle.css" type="text/css"/>
+		<title>Sign Up!!</title>
+	</head>
+
+	<body>
+		<div>
+		<h1><b>Sign Up to SDSU Marathon</b></h1>
+		</div>
+    
+		<form name="Runner_info" method="post" enctype="multipart/form-data" action="process_request.php" id = "runnerinformation"
+          autocomplete="off">
+			<fieldset>
+				<legend>Runner Details</legend>
+
+					<ul>
+			
+						<li><label for="fname">First Name:</label>
+							<input type="text" name="fname" id="firstname" size = "25"/></li>
+						<li><label for="mname">Middle Name:</label>
+							<input type="text" name="mname" id="middlename" size = "25"/></li>
+						
+						<li>	<label for = "lastname">Last Name:</label>
+							<input type="text" name="lname" id="lastname" size = "25"/></li>
+							
+						<li>	<label for="addressone">Address 1:</label>
+							<input type="text" name="address1" id="address1" size = "55"></li>
+							
+						<li>	<label for="addresstwo">Address 2:</label>
+							<input type="text" name="address2" id="addresstwo" size = "55"></li>
+
+						<li>	<label for="city">City</label>
+							<input type="text" name="city" id="city" size="15">
+
+							<label for="state">State</label>
+							<input type="text" name="state" id="state" maxlength="2" size="5" >
+
+							<label for="zip">Zip</label>
+							<input type="text" pattern="[0-9]{5}" name="zip" id="zip" maxlength="5" size="10" ></li>
+						
+						<li><label id = "fone">Primary Phone</label> (
+							<input class="phone" type="tel" name="areacode" maxlength="3" size = "4" >)
+							<input class="phone" type="tel" name="phoneprefix" maxlength="3" size = "4" > -
+							<input class="phone" type="tel" name="phoneno" maxlength="4" size = "5" ></li>
+						
+
+						<li><label for="email">Email</label>
+						<input type="email" name="email" id="email" size="45" ></li>
+				
+			   
+						<li><label>Gender :</label>
+
+							<input id="male" name="gender" type="radio"  value = "male">Male
+							<input id="female" name="gender" type="radio"  value = "female">Female
+							<input id="other" name="gender" type="radio"  value = "other">Other</li>
+
+            
+			
+						
+            
+
+						<li>	<label>Date of Birth:</label>
+							
+								<label for="mm">mm</label>
+								<input id="mm" name="month" type="text" maxlength="2" size = "3">
+								<label for="dd">dd</label>
+								<input id="dd" name="day" type="text" maxlength="2" size = "3">
+								<label for="yyyy">yyyy</label>
+								<input id="yyyy" name="year" type="text" maxlength="4" size = "5"></li>
+								
+								
+						<li>	<label>Experience Level:</label>
+							
+								<input id="expert" name="experiencelevel" type="radio"  value = "expert">Expert
+								<input id="experienced" name="experiencelevel" type="radio"  value = "Experienced">Experienced
+								<input id="novice" name="experiencelevel" type="radio"  value = "Novice">Novice</li>
+            
+
+						<li>		<label for="medical-conditions">Medical Conditions If An</label></li>
+								
+						<li><textarea rows="4" cols = "50" name="medicalconditions" id="medical-conditions" ></textarea></li>
+
+            
+						<li>		<label>Category:</label>
+								
+									<input id="teen" name="age" type="radio"  value = "teen">teen
+									<input id="adult" name="age" type="radio"  value = "adult">adult
+									<input id="senior" name="age" type="radio"  value = "senior">senior</li>
+            
+								
+								
+						<li>    <label for="user-pic">Runner's Image:</label>		
+								
+								<input type="file" class="fileinput" name="userpic" id="user-pic" accept="image/*">
+								</label></li>
+					</ul>
+					
+					<h5 id = "message_line">&nbsp;</h5>
+				
+				
+				
+				<div id = "Submitbuttons">
+					<input type="reset" id="reset-btn" value="ClearData" class="button"/>
+					<input id="submit-btn" type="submit" value="Submit" class = "button"/>
+				</div>
+
+			</fieldset>
+
+        
+
+		</form>
+
+	
+	</body>
+
+</html>
