@@ -1,7 +1,5 @@
 <!--
     KambathalliParswanatha, Nagachandra
-    jadrn023
-    Project #3
     Fall 2017;
 -->
 <!DOCTYPE html>
